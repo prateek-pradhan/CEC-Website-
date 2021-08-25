@@ -1,0 +1,53 @@
+.Background {
+  background-color: #0C1B27;
+  color: #F3F3F3;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.Footer {
+  background-color: #F3F3F3;
+  color: #0C1B27;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-width: 100%;
+}
+.InfoBarTitle {
+  font-family: 'Poppins';
+  text-align: left;
+  font-size: 31px;
+  color: 'white';
+  text-overflow: ellipsis;
+  font-weight: 600;
+}
+
+.Subtitle {
+  font-family: 'Poppins';
+  font-size: 16px;
+  color: 'white';
+  align-content: 'left';
+  text-overflow: ellipsis;
+}
+
+.When {
+  font-family: 'Montserrat';
+  font-size: 20px;
+  color: 'white';
+  align-content: 'left';
+  text-overflow: ellipsis;
+  text-align: left;
+  padding-top: 7.5px;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+.grad {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FCFF69), to(#B6802F));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

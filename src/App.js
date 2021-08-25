@@ -1,13 +1,14 @@
 import './App.css';
-import Header from './components/Header.js';
-import Subheader from './components/Subheader';
+import Navi from './components/Navi.js';
+import Footer from './components/Footer.js'
+import Brack from './components/Brackets/Brack.js';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Subheader />
-     
+      <Navi />
+      <Brack/>
+      <Footer />
     </div>
   );
 }
