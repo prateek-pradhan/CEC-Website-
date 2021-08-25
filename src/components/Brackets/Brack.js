@@ -1,6 +1,7 @@
 import InfoBar from './InfoBar';
 import Brackets from './Brackets';
 import React from 'react'
+import BrackForm from './BrackForm';
 
 export default function Brack() {
     const Info = {
@@ -12,9 +13,10 @@ export default function Brack() {
         teams: 69
     };
     return (
-        <div>
+        <div className="Background">
             <InfoBar tourInfo={Info} />
-            <Brackets />
+            {/* <Brackets /> */}
+            <BrackForm/>
         </div>
     )
 }

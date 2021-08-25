@@ -59,8 +59,24 @@
 }
 
 .SubIcon {
-  color: '#62FF8E';
-  font-size: '15px';
-  padding-left: '3px';
-  padding-right: "3px";
+  color: #62FF8E;
+  font-size: 15px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.Form{
+  font-family: 'Poppins';
+  font-size: 24px;
+}
+
+.FormTitle{
+  font-family: 'Poppins';
+  text-align: left;
+  font-size: 36px;
+  color: 'white';
+  text-overflow: ellipsis;
+  font-weight: 600;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }

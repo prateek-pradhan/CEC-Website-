@@ -18,15 +18,15 @@ export default class InfoBar extends Component {
                                 </Row>
                                 <Row>
                                     <Col xs="auto" md="auto" className="align-self-center">
-                                        <i class="bi bi-people" style={{ color: '#62FF8E', fontSize: '15px', paddingLeft: '3px', paddingRight: "3px" }}></i>
+                                        <i class="bi bi-people SubIcon"></i>
                                         <Navbar.Text className="Subtitle">{this.props.tourInfo.teams} Teams</Navbar.Text>
                                     </Col>
                                     <Col xs="auto" md="auto" className="align-self-center">
-                                        <i class="bi bi-joystick" style={{ color: '#62FF8E', fontSize: '15px', paddingLeft: '3px', paddingRight: "3px" }}></i>
+                                        <i class="bi bi-joystick SubIcon"></i>
                                         <Navbar.Text className="Subtitle">{this.props.tourInfo.game}</Navbar.Text>
                                     </Col>
                                     <Col xs="auto" md="auto" className="align-self-center">
-                                        <i class="bi bi-trophy" style={{ color: '#62FF8E', fontSize: '15px', paddingLeft: '3px', paddingRight: "3px" }}></i>
+                                        <i class="bi bi-trophy SubIcon"></i>
                                         <Navbar.Text className="Subtitle">{this.props.tourInfo.tourny_type}</Navbar.Text>
                                     </Col>
                                 </Row>
