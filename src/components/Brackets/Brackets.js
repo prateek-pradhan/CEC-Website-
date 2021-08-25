@@ -109,7 +109,7 @@ export default class Brackets extends Component {
     return (
       <div className="Background d-flex" >
 
-        <Container style={{ paddingTop: "30px", paddingBottom: "40px" }}>
+        <Container style={{ paddingTop: "40px", paddingBottom: "40px" }}>
           {/* {window.alert(rounds[1].seeds[0].teams[0].name)} */}
           <Bracket rounds={rounds} />
 

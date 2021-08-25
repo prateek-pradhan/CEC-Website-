@@ -8,7 +8,7 @@ export default function Navi() {
   return (
     <div >
       <>
-        <Navbar bg="light" variant="light" expand="lg" fluid className="shadow bg-body rounded">
+        <Navbar bg="light" variant="light" expand="lg">
           <Container >
             <Col className="d-inline-flex" >
               <Navbar.Brand href="#home"><img
