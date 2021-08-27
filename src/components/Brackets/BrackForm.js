@@ -74,7 +74,7 @@ export default function BrackForm() {
                                 <Form.Label className="Form">Total Teams :</Form.Label>
                             </Col>
                             <Col className="d-flex">
-                                <Form.Control type="text" placeholder="eg. 64" />
+                                <Form.Control style={{ width: "230px" }} type="text" placeholder="eg. 64" />
                             </Col>
                         </Form.Group>
                     </Col>
