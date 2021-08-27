@@ -67,7 +67,7 @@
 
 .Form{
   font-family: 'Poppins';
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .FormTitle{
@@ -79,4 +79,9 @@
   font-weight: 600;
   padding-top: 60px;
   padding-bottom: 40px;
+}
+
+.space{
+  margin-bottom: 40px;
+  margin-right: 50px;
 }
