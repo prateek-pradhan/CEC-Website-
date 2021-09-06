@@ -3,6 +3,7 @@
   color: #F3F3F3;
   min-width: 100%;
   min-height: 100%;
+
 }
 
 .Footer {
@@ -68,6 +69,7 @@
 .Form{
   font-family: 'Poppins';
   font-size: 22px;
+  text-align: start;
 }
 
 .FormTitle{
@@ -77,11 +79,11 @@
   color: 'white';
   text-overflow: ellipsis;
   font-weight: 600;
-  padding-top: 60px;
   padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .space{
-  margin-bottom: 40px;
-  margin-right: 50px;
+  color: white;
+  padding-bottom: 30px;
 }
