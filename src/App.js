@@ -7,7 +7,10 @@ function App() {
   return (
     <div className="App">
       <Navi />
-      <Brack/>
+      <div className="bgLogo">
+         {/* add components here. */}
+        <Brack />
+      </div>
       <Footer />
     </div>
   );
