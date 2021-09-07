@@ -1,103 +1,111 @@
 import React from 'react'
-import { Container, Form, Col, Row } from 'react-bootstrap'
+import { Container, Col, Row } from 'react-bootstrap'
 import './css/Brackets.css';
-import DateFnsUtils from '@date-io/date-fns';
-import {
-    MuiPickersUtilsProvider,
-    KeyboardDateTimePicker,
-} from '@material-ui/pickers';
-import Button from '@material-ui/core/Button';
+import { DateTimePicker, Textarea, Input, Select, CheckboxToggle, Button } from 'react-rainbow-components';
 
 export default function BrackForm() {
-    const [selectedDate, setSelectedDate] = React.useState(new Date('2014-08-18T21:11:54'));
+    const [selectedDate, setSelectedDate] = React.useState(new Date());
+    const [value, setSelectedValue] = React.useState();
 
     const handleDateChange = (date) => {
         setSelectedDate(date);
     };
 
+    const options = [
+        { value: 'single', label: 'Single Elimination' },
+        { value: 'double', label: 'Double Elimination' },
+
+    ];
+    const handleValueChange = (value) => {
+        setSelectedValue(value);
+    };
+
     return (
-        <div className="Background" >
-            <Container>
-                <Form className="justify-content-start flex-wrap" >
-                    <h1 className="FormTitle">Create Tournament :</h1>
-                    <Col className="d-flex justify-content-start flex-wrap" >
-                        <Form.Group className="space" controlId="exampleForm.ControlInput1" >
-                            <Col className="d-flex justify-content-start">
-                                <Form.Label className="Form">Tournament Name :</Form.Label>
-                            </Col>
-                            <Col className="d-flex justify-content-start">
-                                <Form.Control style={{ width: "530px" }} type="text" placeholder="eg. Chitkara Valorant Tournament" />
-                            </Col>
-                        </Form.Group>
-
-                        <Form.Group className="space" controlId="exampleForm.ControlInput1" >
-                            <Col className="d-flex justify-content-start">
-                                <Form.Label className="Form">Game :</Form.Label>
-                            </Col>
-                            <Col className="d-flex justify-content-start">
-                                <Form.Control style={{ width: "230px" }} type="text" placeholder="eg. Valorant" />
-                            </Col>
-                        </Form.Group>
-
-                    </Col>
-                    <Col className="d-flex justify-content-start flex-wrap">
-                        <Form.Group className="space" controlId="formGridState">
-                            <Col className="d-flex">
-                                <Form.Label className="Form">Date & Time :</Form.Label>
-                            </Col>
-                            <Col className="d-flex">
-
-                                <MuiPickersUtilsProvider utils={DateFnsUtils}>
-                                    <KeyboardDateTimePicker
-                                        value={selectedDate}
-                                        onChange={handleDateChange}
-                                        className="rounded"
-                                        style={{ backgroundColor: "white", paddingTop: "6px", paddingInline: "10px", textAlign: "center" }}
-                                        format="dd/MMM/yyyy              HH:mm"
-                                    />
-                                </MuiPickersUtilsProvider>
-                            </Col>
-                        </Form.Group>
-                        <Form.Group className="space" controlId="formGridState">
-                            <Col >
-                                <Form.Label className="Form">Tournament Type :</Form.Label>
-                            </Col>
-                            <Col className="d-flex">
-                                <Form.Select defaultValue="Choose...">
-                                    <option>Single Elimination</option>
-                                    <option>Double Elimination</option>
-                                </Form.Select>
-                            </Col>
-                        </Form.Group>
-                        <Form.Group className="space" controlId="exampleForm.ControlInput1" >
-                            <Col className="d-flex">
-                                <Form.Label className="Form">Total Teams :</Form.Label>
-                            </Col>
-                            <Col className="d-flex">
-                                <Form.Control style={{ width: "230px" }} type="text" placeholder="eg. 64" />
-                            </Col>
-                        </Form.Group>
-                    </Col>
-                    <Row>
-                        <Form.Group className="space" controlId="exampleForm.ControlTextarea1">
-                            <Col className="d-flex justify-content-start">
-                                <Form.Label className="Form">Team Names :</Form.Label>
-                            </Col>
-                            <Col className="d-flex justify-content-start">
-                                <Form.Control as="textarea" rows={15} placeholder="Team Names sperated by lines." />
-                            </Col>
-                        </Form.Group>
-                        <Form.Check type="checkbox" id="checkbox" className="space">
-                            <Form.Check.Input type="checkbox" className="Form" />
-                            <Form.Check.Label className="Form" style={{ paddingLeft: "10px" }}>Randomize</Form.Check.Label>
-                        </Form.Check>
-                    </Row>
-                    <Button variant="contained" color="secondary" href="#contained-buttons" className="m-5">
-                        Submit
-                    </Button>
-                </Form>
-            </Container>
-        </div>
+        <Container className="p-3">
+            <h1 className="FormTitle">Create Tournament :</h1>
+            <Row className="d-flex flex-wrap">
+                <Col lg={8}>
+                    <Input
+                        id="input-component-1"
+                        label={<div className="Form" style={{ color: "white" }}>Tournament Name :</div>}
+                        labelAlignment="left"
+                        placeholder="eg. Chitkara Valorant Tournament"
+                        className="space"
+                    />
+                </Col>
+                <Col >
+                    <Input
+                        id="input-component-1"
+                        label={<div className="Form" style={{ color: "white" }}>Game :</div>}
+                        labelAlignment="left"
+                        placeholder="eg. Valorant"
+                        className="space"
+                    />
+                </Col>
+            </Row>
+            <Row className="d-flex flex-wrap">
+                <Col lg={4}>
+                    <DateTimePicker
+                        label={<div className="Form" style={{ color: "white" }}>Date & Time :</div>}
+                        labelAlignment="left"
+                        id="datetimepicker-1"
+                        value={selectedDate}
+                        onChange={handleDateChange}
+                        formatStyle="large"
+                        className="space"
+                    />
+                </Col>
+                <Col lg={4}>
+                    <Select
+                        label={<div className="Form" style={{ color: "white" }}>Tournament Type :</div>}
+                        labelAlignment="left"
+                        options={options}
+                        id="example-select-1"
+                        className="space"
+                    />
+                </Col>
+                <Col lg={4}>
+                    <Input
+                        id="input-component-1"
+                        label={<div className="Form" style={{ color: "white" }}>Total Teams :</div>}
+                        labelAlignment="left"
+                        placeholder="eg. 64"
+                        className="space"
+                    />
+                </Col>
+            </Row>
+            <Row className="d-flex flex-wrap">
+                <Col>
+                    <Textarea
+                        id="example-textarea-1"
+                        label={<div className="Form" style={{ color: "white" }}>Team Names :</div>}
+                        labelAlignment="left"
+                        rows={8}
+                        placeholder="Team names separated by lines."
+                        className="space"
+                    />
+                </Col>
+            </Row>
+            <Row className="d-flex flex-wrap">
+                <Col>
+                    <CheckboxToggle
+                        id="checkbox-toggle-component-1"
+                        label={<div className="Form" style={{ color: "white" }}>Randomize Seeds</div>}
+                        labelAlignment="left"
+                        value={value}
+                        onChange={handleValueChange}
+                        className="space"
+                    />
+                </Col>
+            </Row>
+            <Button
+                label="Submit"
+                onClick={() => alert('Submitted!')}
+                variant="success"
+                className="space m-5"
+                size='large'
+            />
+        </Container>
     )
 }
 

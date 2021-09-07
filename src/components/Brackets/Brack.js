@@ -14,9 +14,9 @@ export default function Brack() {
     };
     return (
         <div className="Background">
-            <InfoBar tourInfo={Info} />
-            {/* <Brackets /> */}
-            <BrackForm/>
+            <InfoBar tourInfo={Info} /> 
+            <Brackets />
+            <BrackForm />
         </div>
     )
 }
