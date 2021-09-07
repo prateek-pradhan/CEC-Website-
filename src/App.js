@@ -1,7 +1,7 @@
 import './App.css';
 import Navi from './components/Navi.js';
 import Footer from './components/Footer.js'
-import Brack from './components/Brackets/Brack.js';
+import {Home} from './components/HomePage/Home';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Navi />
       <div className="bgLogo">
          {/* add components here. */}
-        <Brack />
+        <Home />
       </div>
       <Footer />
     </div>
