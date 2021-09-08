@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Container, Nav, Col} from 'react-bootstrap';
+import { Navbar, Container, Nav, Col } from 'react-bootstrap';
 import Logo from '../assets/logo.png';
 import './Navi.css';
 
@@ -22,6 +22,7 @@ export default function Navi() {
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
               <Nav className="justify-content-end">
                 <Nav.Link href="#events" className="NavButton">Events</Nav.Link>
+                <Nav.Link href="#brackets" className="NavButton">Brackets</Nav.Link>
                 <Nav.Link href="#gallery" className="NavButton">Gallery</Nav.Link>
                 <Nav.Link href="#login" className="NavButton">Login</Nav.Link>
               </Nav>
