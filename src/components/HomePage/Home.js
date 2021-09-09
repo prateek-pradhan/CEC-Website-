@@ -6,10 +6,12 @@ import yt from '../../assets/yt-logo.png'
 import tele from '../../assets/tele-logo.png'
 import dis from '../../assets/dis-logo.png'
 import insta from '../../assets/insta-logo.png'
+import '../../App.css'
+
 
 export const Home = () => {
     return (
-        <div className="main-body">
+        <div className="main-body bgLogo">
             <div class="row">
                 <div class="col-md-6">
                     <div class="slideshow">
