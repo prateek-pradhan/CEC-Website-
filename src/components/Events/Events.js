@@ -49,27 +49,27 @@ const Events = () => {
         <div>
             <h1 >LIVE</h1>
             <div className="grid">
-                {
+            {
                     cardInfo.map((elem) => {
                         return elem.date.toDateString() === now.toDateString() ? renderCard(elem) : "";
                     })
-                }
+            }
             </div>
             <h1>Upcoming</h1>
             <div className="grid">
-                {
+            {
                     cardInfo.map((elem) => {
                         return elem.date > now ? renderCard(elem) : "";
                     })
-                }
+            }
             </div>
             <h1>Past</h1>
             <div className="grid">
-                {
+            {
                     cardInfo.map((elem) => {
                         return elem.date < now ? renderCard(elem) : "";
                     })
-                }
+            }
             </div>
         </div>
     );
