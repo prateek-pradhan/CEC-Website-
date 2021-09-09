@@ -1,9 +1,10 @@
 import React from 'react'
 import Events from './Events'
+import '../../App.css'
 
 function EventPage() {
     return (
-        <div>
+        <div className="bgLogo">
             <Events />
         </div>
     )

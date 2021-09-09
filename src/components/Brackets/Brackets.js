@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap'
 import { Bracket, RoundProps } from 'react-brackets';
 import './css/Brackets.css'
 
-const rounds: RoundProps[] = [
+let rounds: RoundProps[] = [
   {
     title: 'Round One',
     seeds: [

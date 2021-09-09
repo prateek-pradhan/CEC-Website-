@@ -15,9 +15,9 @@
   text-align: left;
   font-size: 31px;
   color: 'white';
-  text-overflow: ellipsis;
   font-weight: 600;
   padding-top: 7.5px;
+  margin-left: 0%;
 }
 
 .Subtitle {
@@ -74,6 +74,7 @@
   padding-bottom: 60px;
   padding-top: 60px;
   padding-left: 12px;
+  margin-left: 0%;
 }
 
 .space {
