@@ -5,8 +5,7 @@ import './Navi.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import EventPage from './Events/EventPage';
 import Brack from './Brackets/Brack';

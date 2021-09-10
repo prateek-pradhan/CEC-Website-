@@ -43,9 +43,9 @@ export const Home = () => {
                     <a href="https://www.youtube.com" target="_blank" rel="noreferrer"><img className="social-logo" src={yt} alt="youtube" /></a>
                 </div>
             </div>
-            <Container data-aos="fade-down" className="about" >
+            <Container data-aos="fade-up" className="about" >
                 <h1 className="about-title">About Us</h1>
-                <p className="about-content">Chitkara Esports Club (formerly known as Esports Chitkara Club) is a club managed by students here at Chitkara University. We host online <br />
+                <p className="about-content">Chitkara Esports Club is a club managed by students here at Chitkara University. We host online <br />
                     gaming events and try our best to provide you with the latest esports content available. Stay in touch to be part of this beautiful journey <br />
                     through the growing esports scene in the country.  </p>
             </Container>
