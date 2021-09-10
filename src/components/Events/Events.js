@@ -15,7 +15,7 @@ const Events = () => {
     },
     {
         name: "CEC CSGO Tournament",
-        date: new Date("May 20, 2022"),
+        date: new Date("May 20, 2021"),
         time: "12:30 pm IST",
         game: "CSGO",
         image: "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg?t=1629301045",
@@ -24,19 +24,39 @@ const Events = () => {
     },
     {
         name: "CEC Apex Tournament",
-        date: new Date("September 1, 2021"),
+        date: new Date("September 1, 2022"),
         time: "12:30 pm IST",
         game: "Apex Legends",
         image: "https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2021/04/NexstarThumbnail_041421_ApexLegends_1680x945.jpg?strip=1",
         tournament_type: "Single Elimination",
         teams: 69
-    }];
+    },
+    {
+        name: "CEC Call of Duty Tournament",
+        date: new Date("September 10, 2021"),
+        time: "12:30 pm IST",
+        game: "COD",
+        image: "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/warzone/social/wz-social-share.jpg",
+        tournament_type: "Single Elimination",
+        teams: 69
+    }
+];
 
     const renderCard = (card, index) => {
         return (
             <>
                 <Card style={{ width: '18rem' }} key={index} className="box">
                     <img variant="top" src={card.image} fluid={true} className="img" alt={card.name} />
+                </Card>
+            </>
+        )
+    }
+    const PastCard = (card, index) => {
+        return (
+            <>
+                <Card style={{ width: '18rem' }} key={index} className="pastbox">
+                    <img variant="top" src={card.image} fluid={true} className="pastimg" alt={card.name} />
+                    <div className = "pastcard">ended</div>
                 </Card>
             </>
         )
@@ -67,7 +87,7 @@ const Events = () => {
             <div className="grid">
             {
                     cardInfo.map((elem) => {
-                        return elem.date < now ? renderCard(elem) : "";
+                        return elem.date < now ? PastCard(elem) : "";
                     })
             }
             </div>
