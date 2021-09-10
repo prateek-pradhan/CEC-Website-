@@ -3,7 +3,9 @@
     border-radius: 15px;
     margin: 30px;
     height: 200px;
-    
+    border-color: black;
+    box-shadow: 7px 10px 5px rgb(0, 0, 0);
+
 }
 
 .grid{
@@ -48,6 +50,8 @@ h1{
     margin: 30px;
     height: 200px;
     z-index: 1;
+    border-color: black;
+    box-shadow: 7px 10px 5px rgb(0, 0, 0);
 }
 
 .pastimg{
@@ -68,5 +72,6 @@ h1{
     border-radius: 2%;
     padding: 10px;
     font-weight: 600;
+    
 }
 
