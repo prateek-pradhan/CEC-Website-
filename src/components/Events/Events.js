@@ -47,7 +47,7 @@ const Events = () => {
     // console.log("date " + datecard);
     return (
         <div>
-            <h1 >LIVE</h1>
+            <h1 >Live</h1>
             <div className="grid">
             {
                     cardInfo.map((elem) => {
