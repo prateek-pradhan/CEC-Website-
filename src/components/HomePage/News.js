@@ -3,8 +3,8 @@ import './css/Home.css'
 
 export const News = () => {
     return (
-        <div className="NewsBox">
-            <h3 className="News-Header">News</h3>
+        <div className="newsbox scroll">
+            <h3 className="news-header">News</h3>
             <div className="line"></div>
             <div className="News-content"></div>
             <ul>
