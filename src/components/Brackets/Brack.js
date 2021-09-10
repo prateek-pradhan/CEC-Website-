@@ -1,20 +1,21 @@
-import InfoBar from './InfoBar';
-import Brackets from './Brackets';
+import InfoBar from './InfoBar.js';
+import Brackets from './Brackets.js';
 import React from 'react'
-import BrackForm from './BrackForm';
+import BrackForm from './BrackForm.js';
+import '../../App.css'
 
 export default function Brack() {
-    const Info = {
+    let Info = {
         name: "CEC Valorant Tournament",
-        date: "April 20, 2020",
-        time: "12:30 pm IST",
+        date: new Date().toLocaleDateString('en-US',{  year: 'numeric', month: 'long', day: 'numeric' }),
+        time: new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }),
         game: "Valorant",
         tourny_type: "Single Elimination",
         teams: 69
     };
     return (
-        <div className="Background">
-            <InfoBar tourInfo={Info} /> 
+        <div className="Background bgLogo">
+            <InfoBar tourInfo={Info} />
             <Brackets />
             <BrackForm />
         </div>
