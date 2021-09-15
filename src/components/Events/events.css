@@ -4,8 +4,8 @@
     margin: 30px;
     height: 200px;
     border-color: black;
-    box-shadow: 7px 10px 5px rgb(0, 0, 0);
-
+    box-shadow: 2px 2px 25px 2px rgb(0, 0, 0);
+    cursor: pointer
 }
 
 .grid{
@@ -51,7 +51,8 @@ h1{
     height: 200px;
     z-index: 1;
     border-color: black;
-    box-shadow: 7px 10px 5px rgb(0, 0, 0);
+    box-shadow: 2px 2px 25px 2px rgb(0, 0, 0);
+    cursor: pointer
 }
 
 .pastimg{

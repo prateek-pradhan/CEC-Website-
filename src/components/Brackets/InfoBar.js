@@ -19,7 +19,7 @@ export default class InfoBar extends Component {
                                 <Row>
                                     <Col xs="auto" md="auto" className="align-self-center">
                                         <i class="bi bi-people SubIcon"></i>
-                                        <Navbar.Text className="Subtitle">{this.props.tourInfo.teams} Teams</Navbar.Text>
+                                        <Navbar.Text className="Subtitle">{this.props.tourInfo.totalTeams} Teams</Navbar.Text>
                                     </Col>
                                     <Col xs="auto" md="auto" className="align-self-center">
                                         <i class="bi bi-joystick SubIcon"></i>

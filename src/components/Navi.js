@@ -10,7 +10,8 @@ import {
 import EventPage from './Events/EventPage';
 import Brack from './Brackets/Brack';
 import { Home } from './HomePage/Home'
-
+import Brackets from './Brackets/Brackets';
+import NewBrackets from './Brackets/NewBrackets';
 
 export default function Navi() {
   return (
@@ -32,7 +33,7 @@ export default function Navi() {
                 <Nav className="justify-content-end">
                   <Nav.Link href="/" className="NavButton">Home</Nav.Link>
                   <Nav.Link href="/events" className="NavButton">Events</Nav.Link>
-                  <Nav.Link href="/brackets" className="NavButton">Brackets</Nav.Link>
+                  <Nav.Link href="/brack" className="NavButton">Brackets</Nav.Link>
                   <Nav.Link href="#login" className="NavButton">Login</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
@@ -42,8 +43,12 @@ export default function Navi() {
             <Route path="/events">
               <EventPage />
             </Route>
-            <Route path="/brackets">
+            <Route path="/brack">
               <Brack />
+            </Route>
+            <Route path="/brackets">
+              <Brackets />
+              <NewBrackets />
             </Route>
             <Route path="/">
               <Home />

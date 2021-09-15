@@ -1,24 +1,23 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
-
-*{
+* {
     font-family: 'Montserrat';
 }
 
-.slideshow{
+.slideshow {
     padding: 7% 7%;
     filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.5));
 }
 
-.carousel-inner{
+.carousel-inner {
     border-radius: 1%;
 }
 
-.main-body{
+.main-body {
     min-height: 100vh;
 }
 
-.newsbox{
+.newsbox {
     height: 54vh;
     width: auto;
     background-color: #C4C4C4;
@@ -27,111 +26,129 @@
     color: black;
     text-align: left;
     overflow-y: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .newsbox::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .line {
     border-top: 1px solid black;
 }
 
-.light-content{
+.light-content {
     color: #ADADAD;
 }
 
-.social-logo{
+.social-logo {
     max-height: auto;
     max-width: 60px;
-   
 }
 
-.logo-cont{
+.logo-cont {
     display: flex;
     padding: 0%;
 }
 
-h1{
+h1 {
     font-size: larger;
 }
 
-.content{
+.content {
     margin: auto;
 }
 
-.news-header{
+.news-header {
     text-align: center !important;
 }
 
-
-li{
+li {
     margin-bottom: 15px;
 }
 
-.socials{
+.socials {
     margin-top: 5vh;
 }
 
-.about{
+.about {
     margin: 10vh 0;
 }
 
-.about-title{
+.about-title {
     text-decoration: underline;
     padding: 3vh 0;
 }
 
-.about-content{
+.about-content {
     font-size: large;
 }
 
-.featured{
+.featured {
     margin: 10vh 0;
 }
-.featured-title{
+
+.featured-title {
     text-decoration: underline;
     padding: 3vh 0;
 }
 
-.cars img{
+.cars img {
     width: 100%;
     margin: 0 auto;
 }
-.cars{
+
+.cars {
     transform: scale(0.7);
     transition: transform 300ms;
     opacity: 0.4;
 }
-.activeSlide{
+
+.activeSlide {
     transform: scale(1);
     opacity: 1;
 }
 
-.arrow{
+.arrow {
     position: absolute;
     cursor: pointer;
     z-index: 10;
 }
+
 .arrow svg {
     transform: color 300ms;
 }
-.arrow svg:hover{
+
+.arrow svg:hover {
     color: grey;
 }
-.next{
+
+.next {
     right: 0%;
     top: 50%;
 }
-.prev{
+
+.prev {
     left: 0%;
     top: 50%;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .slide img {
         width: 20rem;
     }
+    .img {
+        width: auto;
+        max-height: 20vh;
+        object-fit: cover;
+    }
+}
+
+.img {
+    width: auto;
+    max-height:500px;
+    object-fit: cover;
 }
