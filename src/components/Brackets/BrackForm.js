@@ -2,25 +2,26 @@ import React, { useState } from 'react'
 import { Container, Col, Row, Form } from 'react-bootstrap'
 import './css/Brackets.css';
 import { DateTimePicker, Textarea, Input, Select, Button } from 'react-rainbow-components';
+import { useHistory } from "react-router-dom";
 
 export default function BrackForm() {
     let [selectedDate, setSelectedDate] = useState(new Date());
     let [val, setRandombool] = useState();
 
     const options = [
-        { value: 'singleElim', label: 'Single Elimination' },
-        { value: 'doubleElim', label: 'Double Elimination' },
-
+        { value: 'Single Elimination', label: 'Single Elimination' },
+        { value: 'Double Elimination', label: 'Double Elimination' },
     ];
 
-    const handleOnChange = (event) => {
-        setRandombool(event.target.value);
+    const handleOnChange = (value) => {
+        setRandombool(value);
     }
 
     const handleDateChange = (date) => {
         setSelectedDate(date);
     };
 
+    let history = useHistory();
     const handleSubmit = (event) => {
         event.preventDefault()
         const tournyDetails = {
@@ -29,9 +30,15 @@ export default function BrackForm() {
             game: event.target.game.value,
             tournyType: event.target.tournyType.value,
             totalTeams: event.target.totalTeams.value,
-            teams: event.target.teams.value.split(/\n/)
+            teams: event.target.teams.value.split(/\n/),
+            random: event.target.random.value,
         };
         console.log(tournyDetails);
+        history.push({
+            pathname: '/brackets',
+            state: { tournyDetails }
+        }
+        );
     }
 
     return (
@@ -113,6 +120,7 @@ export default function BrackForm() {
                             type='checkbox'
                             id='default-checkbox'
                             label={<div className="Form" style={{ color: "white" }}>Randomize Seeds</div>}
+                            name="random"
                             value={val}
                             onChange={handleOnChange}
                             className="space Form"

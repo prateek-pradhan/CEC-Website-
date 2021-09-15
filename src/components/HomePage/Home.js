@@ -19,13 +19,13 @@ export const Home = () => {
     }, [])
     return (
         <div className="main-body bgLogo">
-            <div data-aos="fade-up" class="row">
-                <div class="col-lg-6">
-                    <div class="slideshow">
+            <div data-aos="fade-up" className="row">
+                <div className="col-lg-6">
+                    <div className="slideshow">
                         <Slideshow />
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div className="col-lg-6">
                     <News />
                 </div>
             </div>
