@@ -10,8 +10,9 @@ import {
 import EventPage from './Events/EventPage';
 import Brack from './Brackets/Brack';
 import { Home } from './HomePage/Home'
-import Brackets from './Brackets/Brackets';
 import NewBrackets from './Brackets/NewBrackets';
+import { Coinflip } from './Coinflip/Coinflip';
+
 
 export default function Navi() {
   return (
@@ -30,16 +31,19 @@ export default function Navi() {
               </Col>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-                <Nav className="justify-content-end">
-                  <Nav.Link href="/" className="NavButton">Home</Nav.Link>
+                <Nav className="justify-content-end ">
+                  <Nav.Link href="/" className="NavButton ">Home</Nav.Link>
                   <Nav.Link href="/events" className="NavButton">Events</Nav.Link>
                   <Nav.Link href="/brack" className="NavButton">Brackets</Nav.Link>
-                  <Nav.Link href="#login" className="NavButton">Login</Nav.Link>
+                  <Nav.Link href="/coinflip" className="NavButton">CoinFlip</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
           </Navbar>
           <Switch>
+            <Route path="/coinflip">
+              <Coinflip />
+            </Route>
             <Route path="/events">
               <EventPage />
             </Route>
@@ -47,7 +51,6 @@ export default function Navi() {
               <Brack />
             </Route>
             <Route path="/brackets">
-              <Brackets />
               <NewBrackets />
             </Route>
             <Route path="/">

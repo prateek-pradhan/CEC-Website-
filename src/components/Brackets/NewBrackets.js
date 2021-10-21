@@ -1,10 +1,12 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
-import './css/Brackets.css'
-import useWindowDimensions from './WindowSize'
-import InfoBar from './InfoBar'
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import useWindowDimensions from './WindowSize';
+import InfoBar from './InfoBar';
 import { useLocation } from 'react-router-dom';
 import { SingleEliminationBracket, Match, SVGViewer } from '@g-loot/react-tournament-brackets';
+import useWindowSize from './windowSize.ts';
+import './css/Brackets.css';
+
 
 let matches = [];
 const Theme = {
@@ -26,9 +28,9 @@ const Theme = {
 
 export default function NewBrackets(props) {
 
-  const {width, height} = useWindowDimensions();
-  const finalWidth = Math.max(width - 50, 1920);
-  const finalHeight = Math.max(height - 100, 1080);
+  const [width, height] = useWindowSize();
+  const finalWidth = Math.max(width - 650, 460);
+  const finalHeight = Math.max(height - 100, 1000);
 
   const location = useLocation();
   const Info = {

@@ -81,3 +81,12 @@
   color: white;
   padding-bottom: 30px;
 }
+
+.bracket {
+  overflow-x: scroll;
+}
+
+.svg {
+  width: 100vw;
+  height: 100vh;
+}

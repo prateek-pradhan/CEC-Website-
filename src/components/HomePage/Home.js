@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { Slideshow } from './Slideshow'
 import { News } from './News'
 import { ImageSlider } from './ImageSlider'
@@ -15,7 +15,7 @@ import '../../App.css'
 
 export const Home = () => {
     useEffect(() => {
-        Aos.init({duration: 2000});
+        Aos.init({ duration: 2000 });
     }, [])
     return (
         <div className="main-body bgLogo">
@@ -29,28 +29,30 @@ export const Home = () => {
                     <News />
                 </div>
             </div>
-            <div data-aos="fade-left" className="row socials">
-                <div className="col-sm content">
-                    <h1>Connect with us</h1>
+            <Container>
+                <div data-aos="fade-left" className="row socials">
+                    <div className="col-sm content">
+                        <h1>Connect with us</h1>
+                    </div>
+                    <div className="col-sm-auto content">
+                        <h5 className="light-content">Join our socials for<br />the latest content and updates</h5>
+                    </div>
+                    <div className="col-sm content">
+                        <a href="https://discord.com/invite/jvdjmZSJgJ" target="_blank" rel="noreferrer"><img className="social-logo" src={dis} alt="discord" /></a>
+                        <a href="https://www.instagram.com/chitkaraesports/" target="_blank" rel="noreferrer"><img className="social-logo" src={insta} alt="instagram" /></a>
+                        <a href="https://t.me/joinchat/135fr-RWUqo3M2I1" target="_blank" rel="noreferrer"><img className="social-logo" src={tele} alt="telegram" /></a>
+                        <a href="https://www.youtube.com" target="_blank" rel="noreferrer"><img className="social-logo" src={yt} alt="youtube" /></a>
+                    </div>
                 </div>
-                <div className="col-sm-auto content">
-                    <h5 className="light-content">Join our socials for<br />the latest content and updates</h5>
-                </div>
-                <div className="col-sm content">
-                    <a href="https://discord.com/invite/jvdjmZSJgJ" target="_blank" rel="noreferrer"><img className="social-logo" src={dis} alt="discord" /></a>
-                    <a href="https://www.instagram.com/chitkaraesports/" target="_blank" rel="noreferrer"><img className="social-logo" src={insta} alt="instagram" /></a>
-                    <a href="https://t.me/joinchat/135fr-RWUqo3M2I1" target="_blank" rel="noreferrer"><img className="social-logo" src={tele} alt="telegram" /></a>
-                    <a href="https://www.youtube.com" target="_blank" rel="noreferrer"><img className="social-logo" src={yt} alt="youtube" /></a>
-                </div>
-            </div>
+            </Container>
             <Container data-aos="fade-up" className="about" >
-                <h1 className="about-title">About Us</h1>
+                <div className="about-title">About Us</div>
                 <p className="about-content">Chitkara Esports Club is a club managed by students here at Chitkara University. We host online <br />
                     gaming events and try our best to provide you with the latest esports content available. Stay in touch to be part of this beautiful journey <br />
                     through the growing esports scene in the country.  </p>
             </Container>
             <Container data-aos="fade-up" className="featured">
-                <h1 className="featured-title">Featured</h1>
+                <div className="featured-title">Featured</div>
                 <ImageSlider />
             </Container>
         </div>
