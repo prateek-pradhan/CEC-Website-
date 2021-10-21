@@ -1,4 +1,4 @@
-.box{
+.boxx{
     position: relative;
     border-radius: 15px;
     margin: 30px;
@@ -31,13 +31,12 @@ h1{
     margin-left: 6%;
     padding-top: 2%;
     padding-bottom: 1%;
-    
 }
 
 .img{
     height: 100%;
     width: 100%;
-    object-fit:cover;
+    object-fit:contain;
 }
 
 .max{
@@ -75,4 +74,3 @@ h1{
     font-weight: 600;
     
 }
-

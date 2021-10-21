@@ -81,6 +81,11 @@ li {
 .about-title {
     text-decoration: underline;
     padding: 3vh 0;
+    font-family: 'Poppins';
+    font-size: 36px;
+    color: white;
+    text-overflow: ellipsis;
+    font-weight: 600;
 }
 
 .about-content {
@@ -94,6 +99,11 @@ li {
 .featured-title {
     text-decoration: underline;
     padding: 3vh 0;
+    font-family: 'Poppins';
+    font-size: 36px;
+    color: white;
+    text-overflow: ellipsis;
+    font-weight: 600;
 }
 
 .cars img {
@@ -149,6 +159,6 @@ li {
 
 .img {
     width: auto;
-    max-height:500px;
+    max-height: 500px;
     object-fit: cover;
 }

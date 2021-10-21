@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container } from 'react-bootstrap';
 import { Card } from 'react-rainbow-components';
 import './events.css'
 
@@ -45,7 +46,7 @@ const Events = () => {
     const renderCard = (card, index) => {
         return (
             <>
-                <Card style={{ width: '18rem' }} key={index} className="box">
+                <Card style={{ width: '18rem' }} key={index} className="boxx">
                     <img variant="top" src={card.image} fluid={true} className="img" alt={card.name} />
                 </Card>
             </>
@@ -66,7 +67,7 @@ const Events = () => {
     // console.log("now " + now);
     // console.log("date " + datecard);
     return (
-        <div>
+        <>
             <h1 >Live</h1>
             <div className="grid">
             {
@@ -91,7 +92,7 @@ const Events = () => {
                     })
             }
             </div>
-        </div>
+        </>
     );
 };
 
