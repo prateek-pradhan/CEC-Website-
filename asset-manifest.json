@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/CEC-Website-/static/css/main.98363841.chunk.css",
+    "main.js": "/CEC-Website-/static/js/main.95524c81.chunk.js",
+    "main.js.map": "/CEC-Website-/static/js/main.95524c81.chunk.js.map",
+    "runtime-main.js": "/CEC-Website-/static/js/runtime-main.64f73cae.js",
+    "runtime-main.js.map": "/CEC-Website-/static/js/runtime-main.64f73cae.js.map",
+    "static/css/2.e8b42022.chunk.css": "/CEC-Website-/static/css/2.e8b42022.chunk.css",
+    "static/js/2.1fe02d71.chunk.js": "/CEC-Website-/static/js/2.1fe02d71.chunk.js",
+    "static/js/2.1fe02d71.chunk.js.map": "/CEC-Website-/static/js/2.1fe02d71.chunk.js.map",
+    "static/js/3.d4a2dc6f.chunk.js": "/CEC-Website-/static/js/3.d4a2dc6f.chunk.js",
+    "static/js/3.d4a2dc6f.chunk.js.map": "/CEC-Website-/static/js/3.d4a2dc6f.chunk.js.map",
+    "index.html": "/CEC-Website-/index.html",
+    "static/css/2.e8b42022.chunk.css.map": "/CEC-Website-/static/css/2.e8b42022.chunk.css.map",
+    "static/css/main.98363841.chunk.css.map": "/CEC-Website-/static/css/main.98363841.chunk.css.map",
+    "static/js/2.1fe02d71.chunk.js.LICENSE.txt": "/CEC-Website-/static/js/2.1fe02d71.chunk.js.LICENSE.txt",
+    "static/media/apex-logo.773c0d8a.jpg": "/CEC-Website-/static/media/apex-logo.773c0d8a.jpg",
+    "static/media/bgmi-logo.bf5a2fa8.jpg": "/CEC-Website-/static/media/bgmi-logo.bf5a2fa8.jpg",
+    "static/media/App.css": "/CEC-Website-/static/media/bgop.709f7969.png",
+    "static/media/csgo-logo.a8cef869.jpg": "/CEC-Website-/static/media/csgo-logo.a8cef869.jpg",
+    "static/media/dis-logo.bae4307c.png": "/CEC-Website-/static/media/dis-logo.bae4307c.png",
+    "static/media/heads.81dce2cc.svg": "/CEC-Website-/static/media/heads.81dce2cc.svg",
+    "static/media/insta-logo.a2d67165.png": "/CEC-Website-/static/media/insta-logo.a2d67165.png",
+    "static/media/logo.adf96ba8.png": "/CEC-Website-/static/media/logo.adf96ba8.png",
+    "static/media/Home.css": "/CEC-Website-/static/media/slick.c94f7671.ttf",
+    "static/media/slideshow1.0f081d0f.jpg": "/CEC-Website-/static/media/slideshow1.0f081d0f.jpg",
+    "static/media/slideshow2.5e027fcd.jpg": "/CEC-Website-/static/media/slideshow2.5e027fcd.jpg",
+    "static/media/slideshow3.58f11ee7.jpg": "/CEC-Website-/static/media/slideshow3.58f11ee7.jpg",
+    "static/media/tails.f0752546.svg": "/CEC-Website-/static/media/tails.f0752546.svg",
+    "static/media/tele-logo.038a246f.png": "/CEC-Website-/static/media/tele-logo.038a246f.png",
+    "static/media/val-logo.350ee1ff.jpg": "/CEC-Website-/static/media/val-logo.350ee1ff.jpg",
+    "static/media/yt-logo.ccd84dde.png": "/CEC-Website-/static/media/yt-logo.ccd84dde.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.64f73cae.js",
+    "static/css/2.e8b42022.chunk.css",
+    "static/js/2.1fe02d71.chunk.js",
+    "static/css/main.98363841.chunk.css",
+    "static/js/main.95524c81.chunk.js"
+  ]
+}
